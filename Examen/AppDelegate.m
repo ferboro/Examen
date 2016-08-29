@@ -7,6 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import "OCMapperConfig.h"
+@import GoogleMaps;
+
 
 @interface AppDelegate ()
 
@@ -17,6 +20,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [GMSServices provideAPIKey:@"AIzaSyDtOdyIiiHtQ7gJcqtrBHALpbn_7dQwU7E"];
+    [OCMapperConfig configure];
     return YES;
 }
 
