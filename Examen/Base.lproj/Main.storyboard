@@ -62,10 +62,6 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="Da0-fI-9uv">
-                                <rect key="frame" x="42" y="379" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hEI-Wb-Zaw">
                                 <rect key="frame" x="42" y="74" width="70" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -101,11 +97,16 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="Da0-fI-9uv">
+                                <rect key="frame" x="42" y="379" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="OMv-y5-4Pz"/>
                     <connections>
+                        <outlet property="imagenClima" destination="Da0-fI-9uv" id="PZh-1p-iJs"/>
                         <outlet property="lblCityValue" destination="mks-mS-tou" id="WJm-cF-cas"/>
                         <outlet property="lblHumedityValue" destination="0O5-Bn-1AA" id="Xc2-h3-KcP"/>
                         <outlet property="lblTempMaxValue" destination="66I-PP-c8P" id="f5U-my-MaF"/>

@@ -105,11 +105,18 @@ didTapAtCoordinate:(CLLocationCoordinate2D)coordinate {
         float tempCelsius               = mainObject.temp - 273.15;
         self.placeName = stName;
         //Weather *weatherObject          = object.weather;
-        //NSString *stImg = weatherObject.icon;
+        //NSString *stImage = weatherObject.icon;
+        NSArray *test = (NSArray *)object.weather;
+        //Weather *x = test.accessibilityElements[0];
+        Weather *wImage = test[0];
+        NSString *test2 = wImage.icon;
+        //NSObject *ObImage = object.weather;
+       
+        
         self.placeTempMax = [NSString stringWithFormat:@"%f", mainObject.temp_max];
         self.placeTempMin = [NSString stringWithFormat:@"%f", mainObject.temp_min];
         self.placeHumedity = [NSString stringWithFormat:@"%f", mainObject.humidity];
-        //self.placeImg = weatherObject.icon;
+        self.placeImg = test2;
         
         print(NSLog(@"We are at %@ with latitude %f and longitude %f",stName, lat, lng))
         [UIApplication sharedApplication].networkActivityIndicatorVisible   = NO;
@@ -128,6 +135,8 @@ didTapAtCoordinate:(CLLocationCoordinate2D)coordinate {
     results.lblTempMi = self.placeTempMin;
     results.lblTempMa = self.placeTempMax;
     results.lblHum = self.placeHumedity;
+    results.lblImg = self.placeImg;
+    
 }
 
 @end

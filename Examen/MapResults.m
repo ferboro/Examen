@@ -21,6 +21,16 @@
     self.lblTempMaxValue.text = self.lblTempMa;
     self.lblTempMinValue.text = self.lblTempMi;
     self.lblHumedityValue.text = self.lblHum;
+    
+    NSString *urldelaimagen = [NSString stringWithFormat:@"http://openweathermap.org/img/w/%@.png",self.lblImg];
+    
+    //NSURL *imageURL = [NSURL URLWithString:@"http://openweathermap.org/img/w/10d.png"];
+    NSURL *imageURL = [NSURL URLWithString:urldelaimagen];
+    NSData *imageData = [NSData dataWithContentsOfURL:imageURL];
+    UIImage *imagen = [UIImage imageWithData:imageData];
+    
+    [self.imagenClima setImage:imagen];
+    
 }
 
 - (void)didReceiveMemoryWarning {
