@@ -46,6 +46,10 @@
 		A0B996D81D739C4800603831 /* MainObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B996D71D739C4800603831 /* MainObject.m */; };
 		A0B996DB1D73AA8800603831 /* MapResults.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B996DA1D73AA8800603831 /* MapResults.m */; };
 		A0B996DE1D73CE0700603831 /* Weather.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B996DD1D73CE0700603831 /* Weather.m */; };
+		A0B996E31D73F39A00603831 /* cellPagos.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B996E11D73F39A00603831 /* cellPagos.m */; };
+		A0B996E41D73F39A00603831 /* cellPagos.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0B996E21D73F39A00603831 /* cellPagos.xib */; };
+		A0B996E71D73F50B00603831 /* Compras.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B996E61D73F50B00603831 /* Compras.m */; };
+		A0B996EA1D73F5CE00603831 /* Pagos.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B996E91D73F5CE00603831 /* Pagos.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -127,6 +131,13 @@
 		A0B996DA1D73AA8800603831 /* MapResults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapResults.m; sourceTree = "<group>"; };
 		A0B996DC1D73CE0700603831 /* Weather.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Weather.h; sourceTree = "<group>"; };
 		A0B996DD1D73CE0700603831 /* Weather.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Weather.m; sourceTree = "<group>"; };
+		A0B996E01D73F39A00603831 /* cellPagos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cellPagos.h; sourceTree = "<group>"; };
+		A0B996E11D73F39A00603831 /* cellPagos.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cellPagos.m; sourceTree = "<group>"; };
+		A0B996E21D73F39A00603831 /* cellPagos.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = cellPagos.xib; sourceTree = "<group>"; };
+		A0B996E51D73F50B00603831 /* Compras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Compras.h; sourceTree = "<group>"; };
+		A0B996E61D73F50B00603831 /* Compras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Compras.m; sourceTree = "<group>"; };
+		A0B996E81D73F5CE00603831 /* Pagos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pagos.h; sourceTree = "<group>"; };
+		A0B996E91D73F5CE00603831 /* Pagos.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pagos.m; sourceTree = "<group>"; };
 		B01806CEDF1DA3C3E4E3F706 /* libPods-Examen.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Examen.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -164,8 +175,6 @@
 		A0B9964E1D7352A700603831 = {
 			isa = PBXGroup;
 			children = (
-				A0B996CF1D73995000603831 /* Models */,
-				A0B9969C1D73902900603831 /* Classes */,
 				A0B996761D7358E300603831 /* Podfile */,
 				A0B996591D7352A700603831 /* Examen */,
 				A0B996581D7352A700603831 /* Products */,
@@ -185,6 +194,9 @@
 		A0B996591D7352A700603831 /* Examen */ = {
 			isa = PBXGroup;
 			children = (
+				A0B996DF1D73F35400603831 /* Cells */,
+				A0B9969C1D73902900603831 /* Classes */,
+				A0B996CF1D73995000603831 /* Models */,
 				A0B996751D7352DA00603831 /* Controller */,
 				A0B996741D7352CA00603831 /* Main */,
 				A0B996631D7352A700603831 /* Main.storyboard */,
@@ -231,6 +243,10 @@
 				A0B996611D7352A700603831 /* Start.m */,
 				A0B996D91D73AA8800603831 /* MapResults.h */,
 				A0B996DA1D73AA8800603831 /* MapResults.m */,
+				A0B996E51D73F50B00603831 /* Compras.h */,
+				A0B996E61D73F50B00603831 /* Compras.m */,
+				A0B996E81D73F5CE00603831 /* Pagos.h */,
+				A0B996E91D73F5CE00603831 /* Pagos.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -309,6 +325,7 @@
 				A0B9967A1D73901800603831 /* ocmapper */,
 			);
 			name = Classes;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		A0B996A91D73938500603831 /* json */ = {
@@ -354,6 +371,17 @@
 				A0B996DD1D73CE0700603831 /* Weather.m */,
 			);
 			name = Models;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		A0B996DF1D73F35400603831 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				A0B996E01D73F39A00603831 /* cellPagos.h */,
+				A0B996E11D73F39A00603831 /* cellPagos.m */,
+				A0B996E21D73F39A00603831 /* cellPagos.xib */,
+			);
+			name = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -417,6 +445,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0B996E41D73F39A00603831 /* cellPagos.xib in Resources */,
 				A0B9966D1D7352A800603831 /* LaunchScreen.storyboard in Resources */,
 				A0B9966A1D7352A800603831 /* Assets.xcassets in Resources */,
 				A0B996771D7358E300603831 /* Podfile in Resources */,
@@ -482,6 +511,7 @@
 				A0B996621D7352A700603831 /* Start.m in Sources */,
 				A0B9969A1D73901800603831 /* ObjectMapper.m in Sources */,
 				A0B996CD1D73938500603831 /* SBJsonUTF8Stream.m in Sources */,
+				A0B996E71D73F50B00603831 /* Compras.m in Sources */,
 				A0B996CA1D73938500603831 /* SBJsonStreamWriterAccumulator.m in Sources */,
 				A0B996A21D7391E500603831 /* WebServices.m in Sources */,
 				A0B996991D73901800603831 /* InCodeMappingProvider.m in Sources */,
@@ -489,12 +519,14 @@
 				A0B996A51D7391F600603831 /* Parser.m in Sources */,
 				A0B996681D7352A800603831 /* Examen.xcdatamodeld in Sources */,
 				A0B996971D73901800603831 /* ObjectInstanceProvider.m in Sources */,
+				A0B996E31D73F39A00603831 /* cellPagos.m in Sources */,
 				A0B996C71D73938500603831 /* SBJsonStreamParserAdapter.m in Sources */,
 				A0B9965F1D7352A700603831 /* AppDelegate.m in Sources */,
 				A0B996C51D73938500603831 /* SBJsonStreamParser.m in Sources */,
 				A0B996C81D73938500603831 /* SBJsonStreamParserState.m in Sources */,
 				A0B996C61D73938500603831 /* SBJsonStreamParserAccumulator.m in Sources */,
 				A0B996CB1D73938500603831 /* SBJsonStreamWriterState.m in Sources */,
+				A0B996EA1D73F5CE00603831 /* Pagos.m in Sources */,
 				A0B996CC1D73938500603831 /* SBJsonTokeniser.m in Sources */,
 				A0B996A81D73920C00603831 /* OCMapperConfig.m in Sources */,
 				A0B996D81D739C4800603831 /* MainObject.m in Sources */,
