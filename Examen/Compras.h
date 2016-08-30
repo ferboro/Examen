@@ -10,7 +10,8 @@
 #import "cellPagos.h"
 #import "Pagos.h"
 
-@interface Compras : UITableViewController
+@interface Compras : UIViewController
+@property (strong, nonatomic) IBOutlet UITableView *tblCompras;
 @property int index;
 @property int bntRow;
 

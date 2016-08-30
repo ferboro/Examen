@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Compras.h"
 
 @interface cellPagos : UITableViewCell
-@property (weak, nonatomic) IBOutlet UILabel *lblProductoValue;
-@property (weak, nonatomic) IBOutlet UILabel *lblPrecioValue;
-@property (weak, nonatomic) IBOutlet UIImageView *imgProductoValue;
+@property (weak, nonatomic) IBOutlet UIImageView *imgProducto;
+@property (weak, nonatomic) IBOutlet UILabel *lblPrecio;
+@property (weak, nonatomic) IBOutlet UILabel *lblProducto;
+
 @end

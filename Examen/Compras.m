@@ -18,12 +18,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    [self initController];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -32,10 +27,10 @@
 }
 
 - (void)initController {
-    self.NombreProd   = [[NSMutableArray alloc] initWithObjects: @"MONTBLANC TRADITION COLLECTION COLOR NEGRO", @"TUDOR HERITAGE CHRONOGRAPH COLOR ACERO", @"RELOJ SANDOZ ACERO CORREA", @"R", @"Chamarra",nil];
+    self.NombreProd   = [[NSMutableArray alloc] initWithObjects: @"MONTBLANC TRADITION COLLECTION COLOR NEGRO", @"TUDOR HERITAGE CHRONOGRAPH COLOR ACERO", @"RELOJ SANDOZ ACERO CORREA", @"RELOJ FOSSIL CORREA ACERO", @"CALVIN KLEIN CLASSIC ACERO",nil];
     
     self.Imagen   = [[NSMutableArray alloc] initWithObjects: @"reloj01.jpg", @"reloj02.jpg", @"reloj03.jpg", @"reloj04.jpg", @"reloj05.jpg",nil];
-    self.Precio = [[NSMutableArray alloc] initWithObjects: @"$220", @"$180", @"$490", @"$880", @"$750", @"$230", @"$350", @"$360", @"210", @"410",nil];
+    self.Precio = [[NSMutableArray alloc] initWithObjects: @"$220", @"$180", @"$490", @"$880", @"$750",nil];
 }
 
 /**********************************************************************************************/
@@ -65,9 +60,9 @@
     
     
     //Fill cell with info from arrays
-    cell.lblProductoValue.text   = self.NombreProd[indexPath.row];
-    cell.lblPrecioValue.text   = self.Precio[indexPath.row];
-    cell.imgProductoValue.image   = [UIImage imageNamed:self.Imagen[indexPath.row]];
+    cell.lblProducto.text   = self.NombreProd[indexPath.row];
+    cell.lblPrecio.text   = self.Precio[indexPath.row];
+    cell.imgProducto.image   = [UIImage imageNamed:self.Imagen[indexPath.row]];
     self.bntRow = (int)indexPath.row;
     
     UIButton *btn=[UIButton buttonWithType:UIButtonTypeRoundedRect];
@@ -87,7 +82,7 @@
     
     UIButton *boton = sender;
     self.bntRow =(int)boton.tag;
-    [self performSegueWithIdentifier:@"Process" sender:self];
+    [self performSegueWithIdentifier:@"Pagos" sender:self];
 }
 
 

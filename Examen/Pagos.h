@@ -8,10 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import "Pagos.h"
+#import "PayPalMobile.h"
 
-@interface Pagos : UIViewController
-@property (weak, nonatomic) IBOutlet UILabel *lblProductoValue;
-@property (weak, nonatomic) IBOutlet UILabel *lblPrecioValue;
-@property (weak, nonatomic) IBOutlet UIImageView *imgProductoValue;
+@interface Pagos : UIViewController<PayPalPaymentDelegate>
+@property (weak, nonatomic) IBOutlet UILabel *lblProducto;
+@property (weak, nonatomic) IBOutlet UILabel *lblPrecio;
+@property (weak, nonatomic) IBOutlet UIImageView *imgProducto;
+@property (nonatomic, strong, readwrite) PayPalConfiguration *payPalConfiguration;
 @property int articulo;
 @end

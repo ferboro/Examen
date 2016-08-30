@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		0E611FE82277DBA7A8A16AD1 /* libPods-Examen.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B01806CEDF1DA3C3E4E3F706 /* libPods-Examen.a */; };
+		A02B37061D7513D300924F67 /* reloj01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A02B37011D7513D300924F67 /* reloj01.jpg */; };
+		A02B37071D7513D300924F67 /* reloj02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A02B37021D7513D300924F67 /* reloj02.jpg */; };
+		A02B37081D7513D300924F67 /* reloj03.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A02B37031D7513D300924F67 /* reloj03.jpg */; };
+		A02B37091D7513D300924F67 /* reloj04.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A02B37041D7513D300924F67 /* reloj04.jpg */; };
+		A02B370A1D7513D300924F67 /* reloj05.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A02B37051D7513D300924F67 /* reloj05.jpg */; };
 		A0B9965C1D7352A700603831 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B9965B1D7352A700603831 /* main.m */; };
 		A0B9965F1D7352A700603831 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B9965E1D7352A700603831 /* AppDelegate.m */; };
 		A0B996621D7352A700603831 /* Start.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B996611D7352A700603831 /* Start.m */; };
@@ -55,6 +60,11 @@
 /* Begin PBXFileReference section */
 		1F681F13BEC28A8C23C6CDD9 /* Pods-Examen.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Examen.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Examen/Pods-Examen.debug.xcconfig"; sourceTree = "<group>"; };
 		5416D854E77FE148FD4B3E25 /* Pods-Examen.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Examen.release.xcconfig"; path = "Pods/Target Support Files/Pods-Examen/Pods-Examen.release.xcconfig"; sourceTree = "<group>"; };
+		A02B37011D7513D300924F67 /* reloj01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = reloj01.jpg; sourceTree = "<group>"; };
+		A02B37021D7513D300924F67 /* reloj02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = reloj02.jpg; sourceTree = "<group>"; };
+		A02B37031D7513D300924F67 /* reloj03.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = reloj03.jpg; sourceTree = "<group>"; };
+		A02B37041D7513D300924F67 /* reloj04.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = reloj04.jpg; sourceTree = "<group>"; };
+		A02B37051D7513D300924F67 /* reloj05.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = reloj05.jpg; sourceTree = "<group>"; };
 		A0B996571D7352A700603831 /* Examen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Examen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0B9965B1D7352A700603831 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A0B9965D1D7352A700603831 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -172,6 +182,18 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A02B37001D7513D300924F67 /* imgs */ = {
+			isa = PBXGroup;
+			children = (
+				A02B37011D7513D300924F67 /* reloj01.jpg */,
+				A02B37021D7513D300924F67 /* reloj02.jpg */,
+				A02B37031D7513D300924F67 /* reloj03.jpg */,
+				A02B37041D7513D300924F67 /* reloj04.jpg */,
+				A02B37051D7513D300924F67 /* reloj05.jpg */,
+			);
+			path = imgs;
+			sourceTree = SOURCE_ROOT;
+		};
 		A0B9964E1D7352A700603831 = {
 			isa = PBXGroup;
 			children = (
@@ -194,6 +216,7 @@
 		A0B996591D7352A700603831 /* Examen */ = {
 			isa = PBXGroup;
 			children = (
+				A02B37001D7513D300924F67 /* imgs */,
 				A0B996DF1D73F35400603831 /* Cells */,
 				A0B9969C1D73902900603831 /* Classes */,
 				A0B996CF1D73995000603831 /* Models */,
@@ -446,10 +469,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0B996E41D73F39A00603831 /* cellPagos.xib in Resources */,
+				A02B37081D7513D300924F67 /* reloj03.jpg in Resources */,
 				A0B9966D1D7352A800603831 /* LaunchScreen.storyboard in Resources */,
+				A02B370A1D7513D300924F67 /* reloj05.jpg in Resources */,
+				A02B37091D7513D300924F67 /* reloj04.jpg in Resources */,
 				A0B9966A1D7352A800603831 /* Assets.xcassets in Resources */,
+				A02B37061D7513D300924F67 /* reloj01.jpg in Resources */,
 				A0B996771D7358E300603831 /* Podfile in Resources */,
 				A0B996651D7352A700603831 /* Main.storyboard in Resources */,
+				A02B37071D7513D300924F67 /* reloj02.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -663,7 +691,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.luis.Examen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -679,7 +707,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.luis.Examen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

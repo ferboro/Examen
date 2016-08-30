@@ -11,7 +11,6 @@
 @implementation cellPagos
 
 - (void)awakeFromNib {
-    [super awakeFromNib];
     // Initialization code
 }
 
